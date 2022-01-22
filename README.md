@@ -8,8 +8,6 @@ The source code of `Wuzzuf` ITI final Project
 1. [Usage](#use)
 1. [Dependencies](#dependencies)
 1. [Structure](#structure)
-1. [Contribution](#contribution)
-1. [License](#license)
 
 ## Installation
 
