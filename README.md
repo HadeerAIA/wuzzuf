@@ -91,26 +91,86 @@ The folder structure of the application. Each module contains `components` has o
 │   │   │   │       ├── index.js
 │   │   │           └── style.sass
 │   │   └── store
-│   │       ├── Combine
-│   │       │   ├── action
-│   │       │   │   ├── index.js
-│   │       │   │  
-|   |       |   |
-|   |       |   |
-|   |       |   |
-│   │       │   ├── reducer
-│   │       │       ├── index.js
-│   │       │      
-│   │       │  
-│   │       └── store.js
+│   │   |   ├── Combine
+│   │   |   │   ├── action
+│   │   |   │   │   ├── index.js
+│   │   |   │   │  
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+│   │   |   │   ├── reducer
+│   │   |   │     ├── index.js
+│   │   |   │      
+│   │   |   │  
+│   │   |   └── store.js
+│   │   |
+│   │   └── config
+│   │       ├── index.js
 │   │  
+│   │  
+│   │  
+|   |
+|   |
 │   ├── shared
 │   │   ├── footer
 │   │   │   ├── index.js
 │   │   │   └── style.sass
 │   │   ├── Navbar
 │   │   │   ├── index.js
-│   │   │   └── style.css
+│   │   │   └── style.sass
 │   └── styles.sass
 └── package-lock.json
 ```
+
+# Our Style Guide
+
+### General requirements
+
+1. Take care about `semantics` rules.
+1. Take care about `accessibility` rules.
+1. The names of functions, variables, components and css classes should be descriptive.
+1. No unnecessary comments.
+1. The maximum numbers of arguments is 3, it's preferred to minimize the number of arguments.
+1. No global css classes names.
+
+## Layout
+
+- We'll rely on `Bootstrap`'s `container`, `grid` & `devices breakpoints`
+- Each `section` in the home page should have padding-y(top & bottom) 6rem - 8rem
+  - `--section-y-spacing: 8rem;`
+- Each `heading` of a section should have space between it and the content of the section 4rem - 5rem
+  - `--section-heading-spacing: 5rem;`
+
+## Colors
+
+- `--layout-primary`:
+- `--layout-secondary`:
+- `--text-primary`:
+- `--text-secondary`:
+- `--background-secondary`:
+- `--btn-hover`:
+
+## Typography
+
+### Family
+
+- `--heading-font-family`: 'Rubik', sans-serif;
+- `--body-font-family`: 'PT Sans', sans-serif;
+
+### Size
+
+- `--main-font-size`: 1.2rem;
+- `--heading-2-font-size`: 2rem;
+- `--heading-3-font-size`: 1.8rem;
+
+## General rules
+
+- Paragraphs `line-height`: 1.5;
+- `letter-spacing`: 0.12rem;
+- `word-spacing`: 0.16rem;
+- All styles should have one line space between each other
+
+## Naming Conventions
+
+- Class names should follow [BEM](https://en.bem.info/methodology/quick-start/) Methodology. You can also read this [Cheat sheet](https://9elements.com/bem-cheat-sheet/).
+- Variable, Functions, Methods & components names' should be in `camelCase`.
