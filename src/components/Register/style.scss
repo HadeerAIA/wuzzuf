@@ -1,0 +1,43 @@
+.RegistCart {
+    border-radius: 0%;
+    text-align: left;
+    margin-top: 3%;
+}
+
+
+.RegistbodyContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: right;
+}
+
+.RegistHeaderParagraph {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.RegistanchorsOfForms {
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.RegistcardParagraph {
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.RegistLogoText {
+    text-align: left;
+    margin-left: 15%;
+}
+
+.RegistContactContanier {
+    background-image: url(../../../public/ImagesLoginAndRegist/register-bg-fce3e42828b656fb2b08f69c8e77d62e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
