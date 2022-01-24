@@ -1,0 +1,196 @@
+@import '../../colors.scss';
+
+/*start header*/
+.main-header {
+    padding: 10px;
+    background-color: white;
+    height: 52px;
+    box-shadow: -11px 2px 7px -5px rgba(0, 0, 0, 0.75);
+    width: 100%;
+
+    @media (max-width:992px) {
+        height: auto;
+    }
+
+    /*start header left*/
+    .header-left {
+        .wuzzuf-logo {
+            svg {
+                width: 125px;
+
+                @media (max-width:992px) {
+                    width: 90px;
+                }
+            }
+        }
+
+        .header-nav {
+
+            ul {
+                @media (max-width:992px) {
+                    margin-bottom: 4px;
+                }
+
+                li {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    @media (max-width:992px) {
+                        font-size: .9em;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+
+                    @media (max-width:768px) {
+                        font-size: .8em;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+
+                    &.active {
+                        border-bottom: 2px solid $active-color;
+
+                        a {
+                            color: $active-color;
+                        }
+                    }
+
+                    &:hover {
+                        color: $active-color;
+
+                        a {
+                            color: $active-color;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $app_gray_color;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /*start header left*/
+
+    /*start header right*/
+    .header-right {
+        .search {
+            padding: 3px 13px;
+        }
+
+        .profile-img-btn {
+            width: 32px;
+            cursor: pointer;
+            position: relative;
+
+            .img-thumbnail {
+                padding: 0;
+                border: 1px solid $app_gray_color;
+            }
+
+            .menue-btn {
+                position: absolute;
+                top: 15px;
+                right: -1px;
+                border-radius: 50%;
+                font-size: 0.7em;
+                padding: 4px;
+                background-color: white;
+            }
+        }
+
+        @media (max-width:767px) {
+            order: 1;
+        }
+    }
+
+    /*end header right*/
+
+    /*start settings menue */
+    .profile-settings-menue {
+        background-color: white;
+        position: absolute;
+        top: 53px;
+        right: 3.5%;
+        width: 90%;
+        max-width: 350px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-shadow: -1px 6px 10px -5px rgba(0, 0, 0, 0.75);
+        height: 0;
+        transition: height 1s;
+        z-index: 9999;
+
+        @media (max-width:992px) {
+            top: 89px;
+            left: 0;
+            max-width: 100%;
+            width: 100%;
+            font-size: .9em;
+        }
+
+        hr {
+            margin: 0;
+        }
+
+        &.profile-settings-menue-showed {
+            height: auto !important;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .setting-option:hover {
+            background: rgb(230, 239, 255)
+        }
+
+        .profile-info {
+            padding: 20px 18px;
+
+            .view-profile {
+                .user-name {
+                    color: $app_gray_color;
+                }
+
+                .email {
+                    color: $app_gray_color;
+                }
+
+                .view-profile-link {
+                    color: $active-color;
+                }
+            }
+        }
+
+        .setting-links {
+            padding: 10px;
+
+            a {
+                color: #001433;
+                margin-bottom: 11px;
+                padding: 9px 13px;
+
+                i {
+                    margin-right: 15px;
+                }
+
+                &:hover {
+                    color: $active-color;
+                }
+            }
+        }
+    }
+
+    /*end settings menue */
+
+}
+
+/*end header*/
