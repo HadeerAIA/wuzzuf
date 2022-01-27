@@ -7,13 +7,13 @@ function SavedList(props) {
 
   return (
     <>
-      <div class="col-md-6 offset-md-3 mt-4">
+      <div className="col-md-6 offset-md-3 mt-4">
         <div>
           <h4>
             <span id="jobNumSaved"> 5</span> Active Saved Job
           </h4>
         </div>
-        <sction class="jobs__container col-lg-7 col-xs-12" id="listSaved">
+        <sction className="jobs__container col-lg-7 col-xs-12" id="listSaved">
           <SavedCard
             status="fullTime"
             company="SmartTech Systems"
