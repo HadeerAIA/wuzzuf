@@ -101,9 +101,9 @@ export default function Navbar() {
                             <i className="fas fa-envelope"></i>contact Us
                         </a>
                         <hr />
-                        <a href="settings.html" className="col setting-option">
+                        <NavLink to="settings" className="col setting-option">
                             <i className="fas fa-cog"></i>Account settings
-                        </a>
+                        </NavLink>
                         <a href="" className="col setting-option">
                             <i className="fas fa-sign-out-alt"></i>logout
                         </a>
