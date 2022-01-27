@@ -1,0 +1,36 @@
+.LoginContactContanier 
+{
+    background-image: url('../../../public/ImagesLoginAndRegist/signin-bg-2e90b9bf0eb96dcf489b0c00bfa7b35e.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.LoginbodyContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LogincardParagraph {
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.LoginHeaderParagraph {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.LoginanchorsOfForms {
+    text-decoration: none;
+    margin-left: 10px;
+}
+.LoginCartHeader {
+    border-radius: 0%;
+    margin-top: 3%;
+}
+.LoginCartHeader
+{
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
