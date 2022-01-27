@@ -1,6 +1,8 @@
-import "./App.scss"
-import Navbar from './components/navbar/navbar'
+import Navbar from "./components/navbar/navbar";
+import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AboutUs from "./Components/AboutUs/AboutUs";
+AboutUs;
 
 function App() {
   return (
@@ -8,12 +10,15 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={'explore'} />
+          <Route path="/" exact component={"explore"} />
         </Switch>
       </Router>
 
-      <p>lorem</p>
-      <i className='fa fa-user'></i>
+      <Router>
+        <Switch>
+          <Route path="/AboutUs" exact component={AboutUs} />
+        </Switch>
+      </Router>
     </>
   );
 }
