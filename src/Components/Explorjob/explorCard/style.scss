@@ -1,0 +1,140 @@
+@import "../../../colors.scss";
+
+$green-300: #2c9266;
+
+a {
+  text-decoration: none;
+}
+.hovering_btn {
+  &:hover {
+    background-color: $bg-color;
+  }
+  &:active {
+    color: $jobs-title-color;
+  }
+}
+
+.space__around {
+  width: 2px;
+  height: 32px;
+  background-color: $edit-profile-sideBorder;
+  margin: 0px 12px;
+}
+.active-color {
+  font-weight: bold;
+  border-bottom: 2px solid $jobs-title-color;
+  height: 36px;
+  padding: 0px 1em;
+}
+.application__search {
+  height: 60px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid $edit-profile-sideBorder;
+  padding: 4px 8px;
+}
+
+.search__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $icon-fill-color;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.7em;
+}
+.app_blue_color {
+  color: $jobs-title-color;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: 600;
+  color: rgb(0, 85, 217);
+  font-size: 16px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.small__fonts {
+  font-size: 12px;
+  color: $jobs-title-color;
+}
+.application__modal {
+  .modal-footer {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.app__image {
+  img {
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 2px;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+  }
+}
+
+#popover-content {
+  width: 800px;
+}
+.popover {
+  max-width: 600px !important;
+}
+.small__size {
+  margin-top: 0px;
+  font-size: 12px;
+  color: rgb(128, 142, 165);
+}
+.form-switch {
+  .form-check-input {
+    height: 30px;
+    width: 50px;
+  }
+}
+.sub_title {
+  line-height: 25px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.subscriptions {
+  .form-check-input {
+    width: 18px;
+    height: 18px;
+  }
+}
+.subscriptions {
+  .form-check-input[type="checkbox"] {
+    border-radius: 0.1em;
+  }
+}
+.alert__container {
+  z-index: 9999;
+  position: fixed;
+  padding: 4px;
+  width: 320px;
+  box-sizing: border-box;
+  color: #fff;
+  right: 1em;
+  top: 80px;
+}
+.alert__container {
+  .alert__subscrip {
+    border-top: 2px solid $green-300;
+  }
+  .icon__alert {
+    color: $green-300;
+  }
+}
+.career__applied {
+  //   background-image: url("../../../imgs/company_job/svgimage.svg");
+  background-size: cover;
+  min-height: 308px;
+}
+
+.save-active {
+  color: $jobs-title-color !important;
+  font-weight: bold;
+}
