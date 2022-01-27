@@ -43,7 +43,6 @@ This app uses some dependencies:
 
 1. [Firestore](https://www.npmjs.com/package/firebase) - to add backend .
 
-
 # Our Style Guide
 
 ### General requirements
@@ -96,7 +95,6 @@ This app uses some dependencies:
 
 - Class names should follow [BEM](https://en.bem.info/methodology/quick-start/) Methodology. You can also read this [Cheat sheet](https://9elements.com/bem-cheat-sheet/).
 - Variable, Functions, Methods & components names' should be in `camelCase`.
-
 
 ## Structure
 
