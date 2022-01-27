@@ -8,14 +8,13 @@ The source code of `Wuzzuf` ITI final Project
 1. [Usage](#use)
 1. [Dependencies](#dependencies)
 1. [Structure](#structure)
-1. [Contribution](#contribution)
-1. [License](#license)
+1. [Our Style Guide](#General)
 
 ## Installation
 
 Make sure to have [Node.js](https://nodejs.org/en/download/)
 
-1. Clone this repo `$ git clone https://github.com/IEEE-AZHAR/Official-website.git` or using `ssh`.
+1. Clone this repo `$ https://github.com/leenaAhmed/wuzzuf.git` or using `ssh`.
 
 2. `$ cd Wuzzuf`.
 
