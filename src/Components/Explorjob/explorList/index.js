@@ -3,8 +3,7 @@ import Card from "../explorCard/index";
 // import React, { useState } from "react";
 
 function ExplorList(props) {
-  //   const [movies, setMovies] = useState([]);
-
+ 
   return (
     <>
       <div className="container">
