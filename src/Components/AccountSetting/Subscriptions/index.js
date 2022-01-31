@@ -1,4 +1,4 @@
-function Subscription(params) {
+function Subscription(props) {
   return (
     <>
       <section className="card mt-5">
@@ -12,10 +12,9 @@ function Subscription(params) {
                     className="form-check-input"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked"
-                    checked
+                    id="newsletter"
                   />
-                  <label className="form-check-label" for="flexCheckChecked">
+                  <label className="form-check-label" htmlFor="newsletter">
                     Receive new jobs newsletter
                   </label>
                 </div>
@@ -24,7 +23,7 @@ function Subscription(params) {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>Weekly</option>
+                    <option>Weekly</option>
                     <option value="1"> monthly</option>
                   </select>
                 </div>
@@ -32,15 +31,15 @@ function Subscription(params) {
               <p className="sub_title">
                 You will receive emails containing the latest jobs which match
                 your preferences. You will get it weekly or monthly depending on
-                your job search status 
+                your job search status
               </p>
               <div className="mt">
-                <label className="checkbox">
+                <label className="checkbox" htmlFor="notification">
                   <input
                     className="form-check-input"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked"
+                    id="notification"
                   />
                   <span className="fw-bold text-muted ms-2">
                     <span className="sub_title">
@@ -52,13 +51,12 @@ function Subscription(params) {
               </div>
 
               <div className="mt-2">
-                <label className="fw-bold text-muted  ">
+                <label className="fw-bold text-muted" htmlFor="subscriptions">
                   <input
                     className="form-check-input"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked"
-                    checked
+                    id="subscriptions"
                   />
                   <span className="ms-2">
                     <span className="sub_title">

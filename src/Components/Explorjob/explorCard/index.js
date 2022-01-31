@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShare,
   faEyeSlash,
-  faBookmark,
+  faBookmark
 } from "@fortawesome/free-solid-svg-icons";
 import "./style.scss";
 const ExplorCard = (props) => {
@@ -14,26 +14,30 @@ const ExplorCard = (props) => {
           <div className="card-body">
             <div>
               <Link to="/compony">
-                <span className="app_blue_color"> {props.title}</span>
+                <span className="app_blue_color">{props.title}</span>
               </Link>
               <i className="badge text-secondary bg-light fw-light">
-                {props.status}
+                {props.time}
               </i>
               <p>
                 <Link to="/compony">
-                  <small className="text-dark fw-normal">{props.company}</small>
+                  <small className="text-dark fw-normal">
+                    {props.componyName}
+                  </small>
                 </Link>
                 <span>-</span>
-                <small className="text-secondary ">{props.location}</small>
+                <small className="text-secondary ">{props.city}</small>
               </p>
             </div>
             <div className="text-secondary fs-6">
-              <small> {props.tags}</small>
+              <small>
+                {props.categories} . {props.experience}
+              </small>
               <time className="text-success">1day</time>
             </div>
           </div>
           <a href="#company" className="mt-4">
-            <img src={props.srcImge} width="75px" alt={props.title} />
+            <img src={props.ImageUrl} width="75px" alt={props.title} />
           </a>
         </header>
         <div className="job__reacts d-flex align-items-center ps-3 mt-1 text-secondary">

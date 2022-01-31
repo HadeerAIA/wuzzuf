@@ -1,4 +1,5 @@
-function DeleteAccount(params) {
+function DeleteAccount(props) {
+  console.log("addddd");
   return (
     <>
       <div className="card mt-5 mb-3">
@@ -15,6 +16,7 @@ function DeleteAccount(params) {
               className="btn btn-danger text-white "
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              onClick={props.handleDelete}
             >
               Delete My Account
             </button>

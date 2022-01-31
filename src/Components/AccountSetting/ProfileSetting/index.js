@@ -1,32 +1,34 @@
 function ProfileSeetingAccount(params) {
   return (
     <>
-      <section class="  mt-5  ">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="mb-2 fs-6">Public Profile Settings</h2>
-            <div class="mb-2">
-              <p class="sub_title ">
+      <section className="  mt-5  ">
+        <div className="card">
+          <div className="card-body">
+            <h2 className="mb-2 fs-6">Public Profile Settings</h2>
+            <div className="mb-2">
+              <p className="sub_title ">
                 Activating your public profile enables you to share it with
                 friends and potential employers.
               </p>
-              <p class=" sub_title ">
+              <p className="sub_title ">
                 It's a great way to show the world your skills and experience.
               </p>
             </div>
-            <div class="switch-button is-active me-4">
-              <div class="switch-button__container me-4">
-                <div class="form-check form-switch ">
+            <div className="switch-button is-active me-4">
+              <div className="switch-button__container me-4">
+                <div className="form-check form-switch ">
                   <input
-                    class="form-check-input me-4"
+                    className="form-check-input me-4"
                     type="checkbox"
                     id="flexSwitchCheckChecked"
-                    checked
                   />
-                  <label class="form-check-label" for="flexSwitchCheckChecked">
+                  <label
+                    className="form-check-label"
+                    htmlFor="flexSwitchCheckChecked"
+                  >
                     Make my profile public. (Recommended)
                   </label>
-                  <p class="small__size text-muted">
+                  <p className="small__size text-muted">
                     By activating this option, you can share your profile to
                     those not on WUZZUF and get more exposure.
                   </p>
@@ -35,7 +37,7 @@ function ProfileSeetingAccount(params) {
             </div>
 
             <form>
-              <div class="css-2w5vi3 e1984bhe0">
+              <div className="css-2w5vi3 e1984bhe0">
                 <span>Your url is:</span>
                 <a
                   target="_blank"
@@ -44,7 +46,7 @@ function ProfileSeetingAccount(params) {
                 >
                   wuzzuf.net/me/Lina-Ahmed-4b7a946bab
                 </a>
-                <button type="button" class="btn btn-light ms-3">
+                <button type="button" className="btn btn-light ms-3">
                   Change
                 </button>
               </div>

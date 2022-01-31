@@ -1,9 +1,22 @@
 import { Link } from "react-router-dom";
 import Card from "../explorCard/index";
-// import React, { useState } from "react";
-
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import getJobs from "../../../store/actions/getJobAppliction";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faShare,
+  faEyeSlash,
+  faBookmark
+} from "@fortawesome/free-solid-svg-icons";
 function ExplorList(props) {
- 
+  const getPostsSelector = useSelector((state) => state.posts);
+  const dispatch = useDispatch();
+  const getPostsAction = () => dispatch(getJobs());
+
+  useEffect(() => {
+    getPostsAction();
+  }, []);
   return (
     <>
       <div className="container">
@@ -19,14 +32,20 @@ function ExplorList(props) {
             className="jobs__container col-lg-7 col-xs-12"
             id="listOfJobs"
           >
-            <Card
-              status="fullTime"
-              company="SmartTech Systems"
-              location="Nasr City, Cairo"
-              tags="Entry Level · 1+ Yrs of Exp · Computer Science · Angular · CSS · CSS3 · Engineering · front-end · HTML · HTML5 · Information Technology (IT) · JavaScript "
-              title="Front End Developer (Angular)"
-              srcImge="https://images.wuzzuf-data.net/files/company_logo/SmartTech-Systems-Egypt-25373-1542192084.png"
-            />
+            {getPostsSelector.posts.map((post) => {
+              return (
+                <Card
+                  title={post.data.titleJob}
+                  city={post.data.city}
+                  categories={post.data.categories}
+                  country={post.data.Country}
+                  componyName={post.data.companyname}
+                  time={post.data.timeJob}
+                  ImageUrl={post.data.ImgUrl}
+                  experience={post.data.experience}
+                />
+              );
+            })}
           </sction>
           {/*prograss */}
           <sction className="jobs__prograss col-6 col-lg-4  col-xs-6">
