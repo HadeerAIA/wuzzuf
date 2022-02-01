@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -8,15 +7,13 @@ import Register from "./components/Register/Register";
 import ExplorList from "./components/Explorjob/explorList/index";
 import SavedList from "./components/saved-job/savedList/index";
 import PageAppliction from "./components/JobAppliction/applictionPage/index";
-import  AccountSetting from './components/AccountSetting/index';
+import AccountSetting from './components/AccountSetting/index';
  
 
 
 function App() {
   return (
     <>
- 
-
       <Router>
         <Navbar />
          <Switch>
@@ -26,8 +23,7 @@ function App() {
           <Route path="/settings" exact component={AccountSetting} /> 
            <Route path="/Login" exact component={Login} />
           <Route path="/Regist" exact component={Register} />
-        </Switch> 
-       
+        </Switch>   
       </Router>
     </>
   );
