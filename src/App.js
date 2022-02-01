@@ -9,16 +9,13 @@ import ExplorList from "./components/Explorjob/explorList/index";
 import SavedList from "./components/saved-job/savedList/index";
 import PageAppliction from "./components/JobAppliction/applictionPage/index";
 import  AccountSetting from './components/AccountSetting/index';
-import Apply_to_job from "./Components/Apply_to_job/apply_to_job";
-import Job_details from "./Components/Job_details/job_details";
-import Footer from './Components/Footer/footer';
+ 
 
 
 function App() {
   return (
     <>
-      <Apply_to_job/>
-<Job_details/>
+ 
 
       <Router>
         <Navbar />
